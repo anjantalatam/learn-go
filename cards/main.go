@@ -3,9 +3,12 @@ package man
 import "fmt"
 
 func main() {
-	// var card string = "Ace of spades"
-	card := "King of Diamonds"
+	card := newCard()
 
 	fmt.Println(card)
 
+}
+
+func newCard() string {
+	return "Kind of Diamonds"
 }
