@@ -1,4 +1,4 @@
-package blahblah
+package main
 
 import "fmt"
 
