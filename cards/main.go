@@ -1,14 +1,5 @@
-package man
-
-import "fmt"
+package main
 
 func main() {
-	card := newCard()
-
-	fmt.Println(card)
-
-}
-
-func newCard() string {
-	return "Kind of Diamonds"
+	printState()
 }
