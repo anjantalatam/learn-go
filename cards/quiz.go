@@ -2,6 +2,6 @@ package main
 
 type laptopSize float64
 
-func (this laptopSize) getSizeOfLaptop() laptopSize {
-	return this
+func (l laptopSize) getSizeOfLaptop() laptopSize {
+	return l
 }
