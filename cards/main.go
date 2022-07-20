@@ -5,4 +5,6 @@ func main() {
 
 	cards.saveToFile("my_cards")
 
+	newDeckFromFile("my_card")
+
 }
