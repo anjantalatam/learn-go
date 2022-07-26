@@ -73,3 +73,7 @@ func (d deck) shuffle() {
 	}
 
 }
+
+func (d deck) deal1(handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
