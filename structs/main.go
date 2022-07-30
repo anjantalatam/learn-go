@@ -10,6 +10,7 @@ type person struct {
 func main() {
 
 	person1 := person{"Anjan", "Talatam"}
+	persons := []string{"Anjan", "talatam"}
 	person2 := person{firstName: "Anjan", lastName: "Talatam"}
-	fmt.Println(person1, person2)
+	fmt.Println(person1, person2, persons)
 }
