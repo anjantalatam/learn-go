@@ -23,7 +23,10 @@ func main() {
 		},
 	}
 
-	anjan.updateName("Surya")
+	anjanPointer := &anjan
+	// updateLastName(anjan, "t") // throws error cannot use anjan (variable of type person) as *person value in argument
+	updateLastName((anjanPointer), "SP")
+
 	anjan.print()
 
 }
@@ -34,4 +37,9 @@ func (pointerToPerson *person) updateName(newUpdatePerson string) {
 
 func (p person) print() {
 	fmt.Printf("%+v", p)
+}
+
+func updateLastName(pp *person, newLastName string) {
+	(*pp).lastName = newLastName
+
 }
