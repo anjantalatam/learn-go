@@ -23,9 +23,7 @@ func main() {
 		},
 	}
 
-	anjanPointer := &anjan
-	fmt.Printf("%p", anjanPointer)
-	anjanPointer.updateName("Surya")
+	anjan.updateName("Surya")
 	anjan.print()
 
 }
@@ -36,5 +34,4 @@ func (pointerToPerson *person) updateName(newUpdatePerson string) {
 
 func (p person) print() {
 	fmt.Printf("%+v", p)
-
 }
