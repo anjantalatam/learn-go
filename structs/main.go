@@ -24,6 +24,7 @@ func main() {
 	}
 
 	anjanPointer := &anjan
+	fmt.Printf("%p", anjanPointer)
 	anjanPointer.updateName("Surya")
 	anjan.print()
 
