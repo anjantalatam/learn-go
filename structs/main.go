@@ -28,6 +28,7 @@ func main() {
 	updateLastName((anjanPointer), "SP")
 
 	anjan.print()
+	sliceUpdate()
 
 }
 
