@@ -15,6 +15,10 @@ func main() {
 		os.Exit(91)
 	}
 
-	fmt.Printf("%+v", resp)
+	bs := make([]byte, 99999)
+
+	resp.Body.Read(bs)
+
+	fmt.Println(string(bs))
 
 }
